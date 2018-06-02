@@ -1,0 +1,26 @@
+@mixin flex($align-items: center, $justify-content: center, $flex-flow: row) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-flow: $flex-flow;
+}
+
+// FONTS
+
+@mixin font-Mont($size, $weight: 700) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin font-Noto($size) {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-size: $size;
+}
+
+@mixin font-Roboto($size, $weight: 400) {
+  font-family: 'Roboto Slab', serif;
+  font-size: $size;
+  font-weight: $weight;
+}
