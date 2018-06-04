@@ -24,3 +24,94 @@ $google-plus-color: #da2713;
 
 // -----CODE-----
 
+html {
+  font-size: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.section {
+  width: 100vw;
+}
+
+.content {
+  width: 10rem;
+  height: 100%;
+  padding: 1.2rem .4rem;
+  margin: 0 auto;
+}
+
+.flex-row {
+  @include flex();
+}
+
+.flex-col {
+  @include flex($flex-flow: column);
+}
+
+.hero {
+  height: 50vw;
+  color: white;
+  background: url('../images/header-background.png') no-repeat;
+  background-size: cover;
+
+  .content {
+    @include flex(center, space-between, column);
+    padding-top: .34rem;
+    padding-bottom: 1.52rem;
+  }
+
+  header {
+    width: 100%;
+    padding: .05rem;
+    @include flex(center, space-between);
+  }
+
+  .logo {
+    font-family: 'Marck Script', cursive;
+    color: $gold;
+    font-size: .26rem;
+  }
+
+  .top-nav ul {
+    width: 4.6rem;    
+    @include flex(center, space-between);
+    @include font-Mont(.14rem, 400);
+
+    a {
+      display: block;
+      line-height: .3rem;
+    }
+  }
+
+  .welcome {
+    @include flex(center, center, column);
+
+    h2 {
+      @include font-Noto(.38rem);
+      // line-height: .4rem;
+    }
+  
+    p {
+      margin: .28rem 0 .4rem 0;      
+      @include font-Mont(.68rem);
+      // line-height: .68rem;
+      text-transform: uppercase;
+    }
+
+    button {
+      width: 2.4rem;
+      height: .65rem;
+      @include font-Mont(.18rem);
+      color: white;
+      background-color: $gold;
+      text-transform: uppercase;
+      border: none;
+      border-radius: .03rem;
+      cursor: pointer;
+    }
+  } /* .welcome */
+} /* .hero */
