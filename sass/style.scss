@@ -28,6 +28,11 @@ html {
   font-size: 100px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .section {
   width: 100vw;
 }
@@ -75,6 +80,11 @@ html {
     width: 4.6rem;    
     @include flex(center, space-between);
     @include font-Mont(.14rem, 400);
+
+    a {
+      display: block;
+      line-height: .3rem;
+    }
   }
 
   .welcome {
