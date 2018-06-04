@@ -34,6 +34,7 @@ html {
 
 .content {
   width: 10rem;
+  height: 100%;
   padding: 1.2rem .25rem;
   margin: 0 auto;
 }
@@ -46,3 +47,61 @@ html {
   @include flex($flex-flow: column);
 }
 
+.hero {
+  height: 50vw;
+  color: white;
+  background: url('../images/header-background.png') no-repeat;
+  background-size: cover;
+
+  .content {
+    @include flex(center, space-between, column);
+    padding-top: .34rem;
+    padding-bottom: 1.6rem;
+  }
+
+  header {
+    width: 100%;
+    padding: .05rem;
+    @include flex(center, space-between);
+  }
+
+  .logo {
+    font-family: 'Marck Script', cursive;
+    color: $gold;
+    font-size: .26rem;
+  }
+
+  .top-nav ul {
+    width: 4.8rem;    
+    @include flex(center, space-between);
+    @include font-Mont(.14rem, 400);
+  }
+
+  .welcome {
+    @include flex(center, center, column);
+
+    h2 {
+      @include font-Noto(.4rem);
+      // line-height: .4rem;
+    }
+  
+    p {
+      margin: .52rem 0 .59rem 0;      
+      @include font-Mont(.75rem);
+      // line-height: .75rem;
+      text-transform: uppercase;
+    }
+
+    button {
+      width: 2.6rem;
+      height: .65rem;
+      @include font-Mont(.18rem);
+      color: white;
+      background-color: $gold;
+      text-transform: uppercase;
+      border: none;
+      border-radius: .03rem;
+      cursor: pointer;
+    }
+  }
+}
