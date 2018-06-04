@@ -24,3 +24,25 @@ $google-plus-color: #da2713;
 
 // -----CODE-----
 
+html {
+  font-size: 100px;
+}
+
+.section {
+  width: 100vw;
+}
+
+.content {
+  width: 10rem;
+  padding: 1.2rem .25rem;
+  margin: 0 auto;
+}
+
+.flex-row {
+  @include flex();
+}
+
+.flex-col {
+  @include flex($flex-flow: column);
+}
+
