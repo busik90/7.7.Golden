@@ -35,7 +35,7 @@ html {
 .content {
   width: 10rem;
   height: 100%;
-  padding: 1.2rem .25rem;
+  padding: 1.2rem .4rem;
   margin: 0 auto;
 }
 
@@ -56,7 +56,7 @@ html {
   .content {
     @include flex(center, space-between, column);
     padding-top: .34rem;
-    padding-bottom: 1.6rem;
+    padding-bottom: 1.52rem;
   }
 
   header {
@@ -72,7 +72,7 @@ html {
   }
 
   .top-nav ul {
-    width: 4.8rem;    
+    width: 4.6rem;    
     @include flex(center, space-between);
     @include font-Mont(.14rem, 400);
   }
@@ -81,19 +81,19 @@ html {
     @include flex(center, center, column);
 
     h2 {
-      @include font-Noto(.4rem);
+      @include font-Noto(.38rem);
       // line-height: .4rem;
     }
   
     p {
-      margin: .52rem 0 .59rem 0;      
-      @include font-Mont(.75rem);
-      // line-height: .75rem;
+      margin: .28rem 0 .4rem 0;      
+      @include font-Mont(.68rem);
+      // line-height: .68rem;
       text-transform: uppercase;
     }
 
     button {
-      width: 2.6rem;
+      width: 2.4rem;
       height: .65rem;
       @include font-Mont(.18rem);
       color: white;
