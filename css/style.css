@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Marck+Script|Montserrat:400,700|Noto+Serif:400i|Roboto+Slab:400,700");
+/*-----box-sizing-----*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+/*-----RESET CSS-----*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+.section {
+  width: 100%;
+}
+
+.content {
+  width: 1000px;
+  height: 100%;
+  padding: 100px 30px;
+  margin: 0 auto;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-flow: column;
+      flex-flow: column;
+}
+
+.content .section-title {
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.content p {
+  color: #777;
+}
+
+.content .section-description {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+
+.content i {
+  border-radius: 50%;
+}
+
+.flex-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-flow: row;
+      flex-flow: row;
+}
+
+.flex-col {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-flow: column;
+      flex-flow: column;
+}
+
+.hero {
+  height: 50vw;
+  background: url("../images/header-background.png") no-repeat;
+  background-size: cover;
+}
+
+.hero .content {
+  padding-top: 34px;
+  padding-bottom: 152px;
+}
+
+.hero header {
+  width: 100%;
+  padding: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-flow: row;
+      flex-flow: row;
+}
+
+.hero .logo {
+  font-family: 'Marck Script', cursive;
+  color: #fed136;
+  font-size: 26px;
+}
+
+.hero .top-nav ul {
+  width: 460px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hero .top-nav ul a {
+  display: block;
+  line-height: 30px;
+}
+
+.hero .welcome h2 {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-size: 38px;
+  color: white;
+}
+
+.hero .welcome p {
+  margin: 28px 0 40px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero .welcome button {
+  width: 240px;
+  height: 65px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: #fed136;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.services {
+  height: 568px;
+}
+
+.services [class^="col-"]:nth-child(2) {
+  margin: 0 36px;
+}
+
+.services [class^="col-"] i {
+  display: inline-block;
+  font-size: 40px;
+  color: #fed136;
+  width: 67px;
+  line-height: 64px;
+  /* 65px + border (3px) = 68px */
+  border: 3px solid #fed136;
+}
+
+.services [class^="col-"] h3 {
+  margin: 20px 0 15px 0;
+}
+
+.services [class^="col-"] p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.portfolio {
+  height: 1220px;
+  background-color: #f7f7f7;
+}
+
+.portfolio .th-galery {
+  height: 900px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.portfolio .thumbnail {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  width: 291px;
+  height: 394px;
+  background-color: white;
+}
+
+.portfolio .thumbnail h3 {
+  margin-top: auto;
+  color: #333;
+}
+
+.portfolio .thumbnail p {
+  margin-bottom: auto;
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */
