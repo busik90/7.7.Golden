@@ -15,7 +15,7 @@ $black: #222;
 $grey-dark: #555;
 $grey-medium: #777;
 $grey-hell: #bbb;
-$white-dark: #f9f9f9;
+$white-dark: #f7f7f7;
 
 $twitter-color: #00aced;
 $facebook-color: #3b5998;
@@ -72,11 +72,11 @@ a {
 } // .content
 
 .flex-row {
-  @include flex();
+  @include flex(center, center, row);
 }
 
 .flex-col {
-  @include flex($flex-flow: column);
+  @include flex(center, center, column);
 }
 
 .hero {
