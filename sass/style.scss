@@ -24,25 +24,52 @@ $google-plus-color: #da2713;
 
 // -----CODE-----
 
-html {
-  font-size: 100px;
-}
+// html {
+//   font-size: 100px;
+// }
 
 a {
   text-decoration: none;
   color: white;
+  display: inline-block;
 }
 
 .section {
-  width: 100vw;
+  width: 100%;
 }
 
 .content {
-  width: 10rem;
+  width: 1000px;
   height: 100%;
-  padding: 1.2rem .4rem;
+  padding: 100px 30px;
   margin: 0 auto;
-}
+  text-align: center;
+  @include flex(center, space-between, column);  
+
+  .section-title {
+    margin-bottom: 5px;
+    @include font-Mont(35px);
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  p {
+    color: $grey-medium;
+  }
+
+  .section-description {
+    @include font-Noto(16px);
+  }
+
+  h3 {
+    @include font-Mont(18px);
+    color: $black;
+  }
+
+  i {
+    border-radius: 50%;
+  }
+} // .content
 
 .flex-row {
   @include flex();
@@ -54,64 +81,88 @@ a {
 
 .hero {
   height: 50vw;
-  color: white;
   background: url('../images/header-background.png') no-repeat;
   background-size: cover;
 
   .content {
-    @include flex(center, space-between, column);
-    padding-top: .34rem;
-    padding-bottom: 1.52rem;
+    padding-top: 34px;
+    padding-bottom: 152px;
   }
 
   header {
     width: 100%;
-    padding: .05rem;
+    padding: 5px;
     @include flex(center, space-between);
   }
 
   .logo {
     font-family: 'Marck Script', cursive;
     color: $gold;
-    font-size: .26rem;
+    font-size: 26px;
   }
 
   .top-nav ul {
-    width: 4.6rem;    
+    width: 460px;    
     @include flex(center, space-between);
-    @include font-Mont(.14rem, 400);
+    @include font-Mont(14px, 400);
 
     a {
       display: block;
-      line-height: .3rem;
+      line-height: 30px;
     }
   }
 
   .welcome {
-    @include flex(center, center, column);
-
     h2 {
-      @include font-Noto(.38rem);
-      // line-height: .4rem;
+      @include font-Noto(38px);
+      color: white;
     }
   
     p {
-      margin: .28rem 0 .4rem 0;      
-      @include font-Mont(.68rem);
-      // line-height: .68rem;
+      margin: 28px 0 40px 0;      
+      @include font-Mont(68px);
+      color: white;      
       text-transform: uppercase;
     }
 
     button {
-      width: 2.4rem;
-      height: .65rem;
-      @include font-Mont(.18rem);
+      width: 240px;
+      height: 65px;
+      @include font-Mont(18px);
       color: white;
       background-color: $gold;
       text-transform: uppercase;
       border: none;
-      border-radius: .03rem;
+      border-radius: 3px;
       cursor: pointer;
     }
-  } /* .welcome */
-} /* .hero */
+  } // .welcome
+} // .hero
+
+.services {
+  height: 568px;
+
+  [class^="col-"]:nth-child(2) {
+    margin: 0 36px;    
+  }
+
+  [class^="col-"] {
+    i {
+      display: inline-block;
+      font-size: 40px;
+      color: $gold;
+      width: 67px;
+      line-height: 64px; /* 65px + border (3px) = 68px */
+      border: 3px solid $gold;
+    }
+
+    h3 {
+      margin: 20px 0 15px 0;
+    }
+
+    p {
+      @include font-Roboto(14px);
+      line-height: 23px;
+    }
+  } // [class^="col-"]
+} // .services
