@@ -31,6 +31,7 @@ html {
 a {
   text-decoration: none;
   color: white;
+  display: inline-block;
 }
 
 .section {
@@ -42,6 +43,7 @@ a {
   height: 100%;
   padding: 1.2rem .4rem;
   margin: 0 auto;
+  text-align: center;
 
   .section-title {
     @include font-Mont(.4rem);
@@ -54,7 +56,6 @@ a {
   }
 
   .section-description {
-    @extend p;
     @include font-Noto(.16rem);
   }
 
@@ -62,7 +63,12 @@ a {
     @include font-Mont(.18rem);
     color: $black;
   }
-}
+
+  .fontello-icon {
+    @include flex();
+    border-radius: 50%;
+  }
+} // .content
 
 .flex-row {
   @include flex();
@@ -130,10 +136,29 @@ a {
       border-radius: .03rem;
       cursor: pointer;
     }
-  } /* .welcome */
-} /* .hero */
+  } // .welcome
+} // .hero
 
 .services {
   height: 5.68rem;
 
-}
+  [class^="col-"] {
+    margin: 0 .28rem;
+    display: inline-block;
+
+    .fontello-icon {
+      width: .68rem;
+      height: .68rem;
+      border: 3px solid $gold;
+    }
+
+    i {
+      font-size: .4rem;
+      color: $gold;
+    }
+
+    p {
+      @include font-Roboto(.14rem);
+    }
+  } // [class^="col-"]
+} // .services
