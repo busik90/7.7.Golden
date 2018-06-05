@@ -142,23 +142,4 @@ a {
 .services {
   height: 5.68rem;
 
-  [class^="col-"] {
-    margin: 0 .28rem;
-    display: inline-block;
-
-    .fontello-icon {
-      width: .68rem;
-      height: .68rem;
-      border: 3px solid $gold;
-    }
-
-    i {
-      font-size: .4rem;
-      color: $gold;
-    }
-
-    p {
-      @include font-Roboto(.14rem);
-    }
-  } // [class^="col-"]
 } // .services
