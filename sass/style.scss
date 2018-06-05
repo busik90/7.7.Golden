@@ -24,9 +24,9 @@ $google-plus-color: #da2713;
 
 // -----CODE-----
 
-html {
-  font-size: 100px;
-}
+// html {
+//   font-size: 100px;
+// }
 
 a {
   text-decoration: none;
@@ -39,14 +39,14 @@ a {
 }
 
 .content {
-  width: 10rem;
+  width: 1000px;
   height: 100%;
-  padding: 1.2rem .4rem;
+  padding: 120px 40px;
   margin: 0 auto;
   text-align: center;
 
   .section-title {
-    @include font-Mont(.4rem);
+    @include font-Mont(40px);
     text-transform: uppercase;
     color: $black;
   }
@@ -56,16 +56,15 @@ a {
   }
 
   .section-description {
-    @include font-Noto(.16rem);
+    @include font-Noto(16px);
   }
 
   h3 {
-    @include font-Mont(.18rem);
+    @include font-Mont(18px);
     color: $black;
   }
 
-  .fontello-icon {
-    @include flex();
+  i {
     border-radius: 50%;
   }
 } // .content
@@ -85,61 +84,81 @@ a {
 
   .content {
     @include flex(center, space-between, column);
-    padding-top: .34rem;
-    padding-bottom: 1.52rem;
+    padding-top: 34px;
+    padding-bottom: 152px;
   }
 
   header {
     width: 100%;
-    padding: .05rem;
+    padding: 5px;
     @include flex(center, space-between);
   }
 
   .logo {
     font-family: 'Marck Script', cursive;
     color: $gold;
-    font-size: .26rem;
+    font-size: 26px;
   }
 
   .top-nav ul {
-    width: 4.6rem;    
+    width: 460px;    
     @include flex(center, space-between);
-    @include font-Mont(.14rem, 400);
+    @include font-Mont(14px, 400);
 
     a {
       display: block;
-      line-height: .3rem;
+      line-height: 30px;
     }
   }
 
   .welcome {
     h2 {
-      @include font-Noto(.38rem);
+      @include font-Noto(38px);
       color: white;
     }
   
     p {
-      margin: .28rem 0 .4rem 0;      
-      @include font-Mont(.68rem);
+      margin: 28px 0 40px 0;      
+      @include font-Mont(68px);
       color: white;      
       text-transform: uppercase;
     }
 
     button {
-      width: 2.4rem;
-      height: .65rem;
-      @include font-Mont(.18rem);
+      width: 240px;
+      height: 65px;
+      @include font-Mont(18px);
       color: white;
       background-color: $gold;
       text-transform: uppercase;
       border: none;
-      border-radius: .03rem;
+      border-radius: 3px;
       cursor: pointer;
     }
   } // .welcome
 } // .hero
 
 .services {
-  height: 5.68rem;
+  height: 568px;
 
+  [class^="col-"] {
+    margin: 0 28px;
+
+    i {
+      display: inline-block;
+      font-size: 40px;
+      color: $gold;
+      width: 68px;
+      line-height: 65px; /* 65px + border (3px) = 68px */
+      border: 3px solid $gold;
+    }
+
+    h3 {
+      margin: 28px 0 18px 0;
+    }
+
+    p {
+      @include font-Roboto(14px);
+    }
+  } // [class^="col-"]
 } // .services
