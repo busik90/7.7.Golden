@@ -41,12 +41,14 @@ a {
 .content {
   width: 1000px;
   height: 100%;
-  padding: 120px 40px;
+  padding: 100px 30px;
   margin: 0 auto;
   text-align: center;
+  @include flex(center, space-between, column);  
 
   .section-title {
-    @include font-Mont(40px);
+    margin-bottom: 5px;
+    @include font-Mont(35px);
     text-transform: uppercase;
     color: $black;
   }
@@ -83,7 +85,6 @@ a {
   background-size: cover;
 
   .content {
-    @include flex(center, space-between, column);
     padding-top: 34px;
     padding-bottom: 152px;
   }
@@ -141,24 +142,27 @@ a {
 .services {
   height: 568px;
 
-  [class^="col-"] {
-    margin: 0 28px;
+  [class^="col-"]:nth-child(2) {
+    margin: 0 36px;    
+  }
 
+  [class^="col-"] {
     i {
       display: inline-block;
       font-size: 40px;
       color: $gold;
-      width: 68px;
-      line-height: 65px; /* 65px + border (3px) = 68px */
+      width: 67px;
+      line-height: 64px; /* 65px + border (3px) = 68px */
       border: 3px solid $gold;
     }
 
     h3 {
-      margin: 28px 0 18px 0;
+      margin: 20px 0 15px 0;
     }
 
     p {
       @include font-Roboto(14px);
+      line-height: 23px;
     }
   } // [class^="col-"]
 } // .services
