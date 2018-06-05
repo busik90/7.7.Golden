@@ -34,7 +34,7 @@ a {
 }
 
 .section {
-  width: 100vw;
+  width: 100%;
 }
 
 .content {
@@ -42,6 +42,26 @@ a {
   height: 100%;
   padding: 1.2rem .4rem;
   margin: 0 auto;
+
+  .section-title {
+    @include font-Mont(.4rem);
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  p {
+    color: $grey-medium;
+  }
+
+  .section-description {
+    @extend p;
+    @include font-Noto(.16rem);
+  }
+
+  h3 {
+    @include font-Mont(.18rem);
+    color: $black;
+  }
 }
 
 .flex-row {
@@ -54,7 +74,6 @@ a {
 
 .hero {
   height: 50vw;
-  color: white;
   background: url('../images/header-background.png') no-repeat;
   background-size: cover;
 
@@ -88,17 +107,15 @@ a {
   }
 
   .welcome {
-    @include flex(center, center, column);
-
     h2 {
       @include font-Noto(.38rem);
-      // line-height: .4rem;
+      color: white;
     }
   
     p {
       margin: .28rem 0 .4rem 0;      
       @include font-Mont(.68rem);
-      // line-height: .68rem;
+      color: white;      
       text-transform: uppercase;
     }
 
@@ -115,3 +132,8 @@ a {
     }
   } /* .welcome */
 } /* .hero */
+
+.services {
+  height: 5.68rem;
+
+}
