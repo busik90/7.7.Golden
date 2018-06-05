@@ -1,8 +1,8 @@
-@mixin flex($align-items: center, $justify-content: center, $flex-flow: row) {
+@mixin flex($align-items: false, $justify-content: false, $flex-flow: row) {
   display: flex;
-  align-items: $align-items;
-  justify-content: $justify-content;
-  flex-flow: $flex-flow;
+  @if $align-items { align-items: $align-items; }
+  @if $justify-content { justify-content: $justify-content; }
+  @if $flex-flow { flex-flow: $flex-flow; }
 }
 
 // FONTS

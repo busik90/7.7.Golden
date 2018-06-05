@@ -15,7 +15,7 @@ $black: #222;
 $grey-dark: #555;
 $grey-medium: #777;
 $grey-hell: #bbb;
-$white-dark: #f9f9f9;
+$white-dark: #f7f7f7;
 
 $twitter-color: #00aced;
 $facebook-color: #3b5998;
@@ -72,11 +72,11 @@ a {
 } // .content
 
 .flex-row {
-  @include flex();
+  @include flex(center, center, row);
 }
 
 .flex-col {
-  @include flex($flex-flow: column);
+  @include flex(center, center, column);
 }
 
 .hero {
@@ -166,3 +166,31 @@ a {
     }
   } // [class^="col-"]
 } // .services
+
+.portfolio {
+  height: 1220px;
+  background-color: $white-dark;
+
+  .th-galery {
+    height: 900px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .thumbnail {
+    @include flex($flex-flow: column);
+    width: 291px;
+    height: 394px;
+    background-color: white;
+
+    h3 {
+      margin-top: auto;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: auto;
+      @include font-Noto(14px);
+    }
+  }
+}
