@@ -192,5 +192,95 @@ a {
       margin-bottom: auto;
       @include font-Noto(14px);
     }
+  } // .thumbnail
+} // .portfolio
+
+.about {
+  $year-box-height: 227px;
+  $year-img-size: 170px;
+  $year-line-width: 2px;
+  $year-border-color: #ececec;
+  $year-description-padding: 30px;
+
+  height: 1420px;
+
+  .flex-col {
+    margin-bottom: auto;
   }
-}
+
+  .year-box {
+    width: 555px;
+    height: $year-box-height;
+    position: relative;
+    @include flex($justify-content: space-between);
+
+    &::after {
+      content: "";
+      width: 0;
+      height: calc(#{$year-box-height} - #{$year-img-size});
+      border: $year-line-width solid $year-border-color;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &:nth-child(even) {
+      margin-right: auto;
+      padding-left: $year-description-padding;
+      text-align: right;
+
+      &::after {
+        right: calc(#{$year-img-size} / 2 - #{$year-line-width} / 2);
+      }
+  
+      .year-img {
+        order: 2;
+      }
+  
+      .year-description {
+        order: 1;
+      }
+    } // &:nth-child(even)
+  
+    &:nth-child(odd) {
+     margin-left: auto;
+     padding-right: $year-description-padding;
+     text-align: left;
+
+      &::after {
+        left: calc(#{$year-img-size} / 2 - #{$year-line-width} / 2);
+      }
+    } // &:nth-child(odd)
+  } // .year-box
+
+  .year-img {
+    width: $year-img-size;
+    height: $year-img-size;
+    border: 6px solid $year-border-color;
+    border-radius: 50%;
+  }
+
+  .year-description {
+    width: 305px;
+
+    h3 {
+      margin-bottom: 15px;
+
+      &:first-line {
+        text-transform: uppercase;
+      }
+    }
+  } // .year-description
+
+  .year-img-last {
+    background-color: $gold;
+    @include flex(stretch, stretch);
+
+    p {
+      margin: auto;
+      @include font-Mont(18px);
+      line-height: 30px;
+      color: white;
+      text-transform: uppercase;
+    }
+  } // .year-img-last
+} // .about
