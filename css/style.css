@@ -468,4 +468,13 @@ a {
 .team p {
   max-width: 600px;
 }
+
+.companies .content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.companies [class^="col-"] {
+  padding: 0 20px;
+}
 /*# sourceMappingURL=style.css.map */
