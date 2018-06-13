@@ -284,3 +284,78 @@ a {
     }
   } // .year-img-last
 } // .about
+
+.team {
+  background-color: $white-dark;
+  height: 818px;
+
+  [class^="col-"] {
+    height: 370px;
+    padding: 0 30px 30px;
+    @include flex($flex-flow: column);
+
+    img {
+      margin-bottom: 26px;
+    }
+
+    p {
+      @include font-Mont(16px);
+      color: $black;
+    }
+
+    h4 {
+      @include font-Roboto(14px);
+      color: $grey-medium;
+    }
+
+    .icon-box {
+      margin-top: auto;
+    }
+
+    a {
+      width: 40px;
+      height: 40px;
+      margin: 0 5px;
+      font-size: 20px;
+      color: $black;
+      border: 3px solid $black;
+      border-radius: 50%;
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+        border: none;
+      }
+    }
+
+    i {
+      @include flex(center, center);
+      width: 100%;
+      height: 100%;
+    }
+
+    .icon- {
+
+      &twitter:hover {
+        background-color: $twitter-color;
+      }
+
+      &facebook:hover {
+        background-color: $facebook-color;
+      }
+
+      &gplus:hover {
+        background-color: $google-plus-color;
+      }
+
+      &pinterest:hover {
+        background-color: $pinterest-color;
+      }
+
+    } // .icon-
+  } // [class^="col-"]
+
+  p {
+    max-width: 600px;
+  }
+} // .team
