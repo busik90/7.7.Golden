@@ -68,6 +68,21 @@ a {
   display: inline-block;
 }
 
+.btn-gold {
+  width: 240px;
+  height: 65px;
+  margin: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: #fed136;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 .section {
   width: 100%;
 }
