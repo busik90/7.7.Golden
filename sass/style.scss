@@ -423,3 +423,12 @@ a {
   }
 
 } // .contact
+
+.footer {
+  height: 90px;
+
+  .copyright {
+    @include font-Mont(14px, normal);
+    color: $grey-dark;
+  }
+} // .footer

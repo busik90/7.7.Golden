@@ -551,4 +551,15 @@ a {
   height: 100%;
   resize: none;
 }
+
+.footer {
+  height: 90px;
+}
+
+.footer .copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #555;
+}
 /*# sourceMappingURL=style.css.map */
