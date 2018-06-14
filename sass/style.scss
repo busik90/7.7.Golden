@@ -469,6 +469,12 @@ a {
   .copyright {
     @include font-Mont(14px, normal);
     color: $grey-dark;
+    margin-right: auto;
+  }
+
+  .icon-box {
+    padding: 0 5px;
+    position: absolute;
   }
 
   .social-icons {
