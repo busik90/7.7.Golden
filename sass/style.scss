@@ -463,7 +463,13 @@ a {
   height: 90px;
 
   .content {
-    position: relative;
+    padding-top: 19px;
+    padding-bottom: 29px;
+  }
+
+  .flex-row {
+    height: 100%;
+    position: relative;    
   }
 
   .copyright {
@@ -473,7 +479,6 @@ a {
   }
 
   .icon-box {
-    padding: 0 5px;
     position: absolute;
   }
 
