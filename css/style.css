@@ -142,6 +142,7 @@ a {
       justify-content: center;
   -ms-flex-flow: row;
       flex-flow: row;
+  width: 100%;
 }
 
 .flex-col {
