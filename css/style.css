@@ -526,11 +526,25 @@ a {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #bbb;
+  color: #222;
   background-color: white;
   border: 2px solid #ccc;
   border-radius: 2px;
+}
+
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+  color: #bbb;
+  text-transform: uppercase;
+}
+
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
+  color: #bbb;
+  text-transform: uppercase;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+  color: #bbb;
+  text-transform: uppercase;
 }
 
 .contact textarea {
