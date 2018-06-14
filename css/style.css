@@ -68,6 +68,21 @@ a {
   display: inline-block;
 }
 
+.btn-gold {
+  width: 240px;
+  height: 65px;
+  margin: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: #fed136;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 .section {
   width: 100%;
 }
@@ -476,5 +491,64 @@ a {
 
 .companies [class^="col-"] {
   padding: 0 20px;
+}
+
+.contact {
+  height: 677px;
+  background: #222 url("../images/contact-background.png") no-repeat right 120px;
+}
+
+.contact .section-title {
+  color: white;
+}
+
+.contact .flex-row {
+  height: 213px;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+}
+
+.contact [class^="col-"] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  padding: 0 15px;
+}
+
+.contact input, .contact textarea {
+  width: 455px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+}
+
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+  color: #bbb;
+  text-transform: uppercase;
+}
+
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
+  color: #bbb;
+  text-transform: uppercase;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+  color: #bbb;
+  text-transform: uppercase;
+}
+
+.contact textarea {
+  height: 100%;
+  resize: none;
 }
 /*# sourceMappingURL=style.css.map */
